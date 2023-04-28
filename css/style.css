@@ -1,0 +1,1452 @@
+@import url(reset.css);
+/* Изменения .text_calc, .button_calc_price */
+/*----- ШАПКА -----*/
+
+.wraper{
+    max-width: 1980px;
+    width: 100%;
+    background: no-repeat url(../img/fon-fon.png);
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    max-width: 996px;
+    width: 100%;
+    outline: 0px solid #e40909;
+    position: relative;
+}
+
+nav{                                                        /* Навигация */
+    background: no-repeat url(../img/line-nav-top.png);
+    background-position: center center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    max-width: 996px;
+    width: 100%;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    outline:0px solid chartreuse;
+    z-index: 2;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15%;
+}
+
+nav > ul li{                    /* Стили кнопок меню */
+    
+    margin-left: 2%;
+}
+
+nav > ul li:not(.disc_for_nav){
+    cursor: pointer;
+}
+
+
+nav > ul li a{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(250, 246, 241);
+    -webkit-transition: color .2s linear;
+     -moz-transition: color .2s linear;
+      -o-transition: color .2s linear;
+       transition: color .2s linear;
+}
+
+nav > ul li a:hover{
+    color: rgb(254, 224, 1);
+}
+
+.disc_for_nav{                       /* Круглые элементы в меню */
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    align-self: center;
+}
+
+.logo_top{
+    outline:0px solid blue;
+    position: absolute;
+    top: 2px;
+    left: 80%;
+    z-index: 3;
+}
+
+.header_slider{
+    height: 437px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: no-repeat url(../img/under-fon.png);
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.dfg{
+    position: absolute;
+}
+
+img[src="img/under-line-header.png"]{
+    position: absolute;
+    top:378px;
+}
+
+.slogan{
+    position: absolute;
+    top:280px;
+    left: 35%;
+    outline: 0px solid #e40909;
+}
+
+.orange_block{   
+    box-sizing: border-box;                                      /* Блок для текста */
+    background: no-repeat url(../img/fon-header-orange.png);
+    background-position: center center;
+    /* height: 269px; */
+    margin-top: -61px;
+    padding-top: 70px;
+    padding-bottom: 35px;
+    /* position: relative; */
+}
+
+.header_orange_block{
+    text-shadow: 6px 6px 6px black;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.text_orange_block{
+    padding-left: 2.5%;
+    padding-top: 25px;
+    color: rgb(250, 248, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-shadow: -1px -1px 3px #695c05, 1px 1px 3px #695c05, 1px -1px 3px #695c05, -1px 1px 3px #695c05;
+
+}
+
+.text_orange_block > :nth-child(1){
+    padding-left: 3%;
+    padding-bottom: 7px;
+}
+
+.text_orange_block > :nth-child(2){
+    padding-left: 22%;
+    padding-bottom: 7px;
+}
+
+.text_orange_block > :nth-child(3){
+    padding-left: 15%;
+    padding-bottom: 7px;
+}
+
+.text_orange_block > :nth-child(4){
+    padding-left: 44%;
+    padding-bottom: 7px;
+}
+
+/*----- КОНТЕНТ -----*/
+
+
+
+.wr_content{
+    background: repeat-y url(../img/fon_blue.png);
+    max-width: 990px;
+    width: 100%;
+    outline: 0px solid #e40909;
+    margin-top: -4px;
+    margin-bottom: 10px;
+}
+
+    /*----- БЛОК РАСЧЕТА ТАРИФА -----*/
+                    /* Блок расчета тарифа верхняя часть*/
+
+
+
+.wr_calc_prise{
+    outline: 0px solid #e40909;
+    position: relative;
+}
+
+.button_calc_price{       /* Плашка расчет тарифа */
+    width: 220px; /* было192px*/
+    height: 60px; /*было46px*/
+    padding-left: 25px;
+    line-height: 38px;
+    background: no-repeat url(../img/fon_for_text_calc_price.png);
+    background-size: 100% 100%;
+    border-radius: 7px;
+    position: absolute;
+    top: -13px;
+    left: -19px;
+    /* box-shadow: 5px -5px 0px 0px rgba(0, 0, 0, 0.3); */
+    color: rgb(250, 246, 241);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    outline: 0px solid #000000;
+}
+
+.wr_disk_calc{     /* Диски расчет тарифа */
+    display: flex;
+    max-width: 745px;
+    width: 100%;    
+    justify-content: space-around;
+    margin-left: 245px; /*260px*/
+    margin-right: -15px;
+    outline: 0px solid #e40909;
+}
+
+.disk_calc{    
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    /* margin-left: 3.03%; */
+    margin-top: -7px;
+    
+}
+
+.text_calc{
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+                /*---- Блок калькулятор ------*/
+
+.calc_prise{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 15px;
+    outline: 0px solid #e40909;
+}
+
+
+.select_calc{                       /* Селект выбор машины */
+    box-sizing: border-box;
+    width: 219px;
+    height: 48px;
+    background: no-repeat url(../img/fon_select_input_order_calc_form.png);
+    border-radius: 7px;
+    padding-right: 10px;   /*padding-right: 123px;*/
+    padding-left: 6px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255); 
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    box-shadow: 6px -6px 0px 0px rgba(0, 0, 0, 0.2);
+    outline: 0px solid #e40909;
+}
+
+.select_calc option{
+    color: #000000;
+    border-radius: 7px;
+}
+
+#select_calc_button{
+    box-sizing: border-box;
+    width: 219px;
+    height: 48px;
+    background: no-repeat url(../img/fon_button_calc.png);
+    border-radius: 7px;
+    /* padding-left: 6px; */
+    padding-top: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(255, 255, 255); 
+    box-shadow: 6px -6px 0px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#select_calc_button:active{
+    box-shadow: none;
+    -moz-transform: translate(1px, 1px); /* Для Firefox */
+     -ms-transform: translate(1px, 1px); /* Для IE */
+      -webkit-transform: translate(1px, 1px); /* Для Safari, Chrome, iOS */
+       -o-transform: translate(1px, 1px);
+        transform: translate(1px, 1px);
+}
+
+#result_calc{
+    box-sizing: border-box;
+    width: 180px;
+    height: 38px;
+    line-height: 45px;
+    border-bottom:3px solid #1B97FF ;
+    grid-column: 3/4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    justify-self: end;
+    text-align: right;
+    margin-right: 20%;
+}
+
+    /*----- БЛОК ФОРМЫ ЗАКАЗА -----*/
+
+    .wr_form_order{
+        max-width: 990px;
+        width: 100%;
+        position: relative;
+        padding-top: 15px;
+        margin-bottom: 45px;
+    }
+
+    .wr_header_form_order{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .wr_disks_order{
+        max-width: 537px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 4px;
+        margin-left: -11px;
+        outline: 0px solid #e40909;
+    }
+
+    .wr_disks_order > span{
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #fff;
+        /* margin-right: 30px; */
+        /*margin-top: -7px;
+        margin-right: -7px; */
+    }
+
+    .wr_choose{
+        display: flex;
+    }
+
+    .choose{        
+        box-sizing: border-box;
+        width: 217px;
+        height: 46px;
+        padding-left: 25px;
+        line-height: 45px;
+        border-radius: 7px;
+        color: rgb(250, 246, 241);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #choose_aero{
+        background: no-repeat url(../img/button_aero.png);
+        margin-right: 10px;
+        box-shadow: 5px -5px 0px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    #choose_train{
+        margin-right: 19px;
+        background: no-repeat url(../img/button_train.png);
+        
+    }
+
+    .style_press{ 
+        margin-top: 1px;
+        margin-left: 1px;
+    }
+
+
+    .text_order{
+        padding-bottom: 5px;
+        padding-left: 70px;
+        padding-right: 70px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+
+    .necessarily_for_fill{
+        color: #fff;
+        padding-left: 5%;
+        padding-bottom: 5px;
+    }
+    
+            /* Форма заказа поезда */
+
+    .form_order_aero{ /* !!!!!!!!!! Это потом удалить и скрывать через js !!!!!!!!!!!!! */
+        height: 238px;
+        display: none;
+    }
+
+    
+    #train{
+        height: 238px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-row-gap: 15px;
+        justify-items: center;
+        outline: 0px solid #e40909;
+    }
+
+    #aero{
+        height: 175px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-row-gap: 15px;
+        justify-items: center;
+        outline: 0px solid #e40909;
+    }
+
+
+    .form_order_both form input:not(.submit_order){
+        box-sizing: border-box;
+        width: 217px;
+        height: 48px;
+        background: no-repeat url(../img/fon_select_input_order_calc_form.png);
+        border-radius: 7px;
+        padding-right: 10px;   
+        padding-top: 15px;
+        padding-left: 8px;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+        box-shadow: 6px -6px 0px 0px rgba(0, 0, 0, 0.2);
+        text-align: right;
+        outline: none;
+        border: none;
+    }
+
+    .form_order_both select{
+        box-sizing: border-box;
+        width: 217px;
+        height: 48px;
+        direction: rtl;
+        background: no-repeat url(../img/fon_select_input_order_calc_form.png);
+        border-radius: 7px;
+        padding-right: 10px;   
+        padding-left: 8px;
+        padding-top: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        color: rgb(255, 255, 255);  
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        box-shadow: 6px -6px 0px 0px rgba(0, 0, 0, 0.2);
+        outline: none;
+        border: none;
+    }
+
+    .form_order_both select option{
+        color: rgb(0, 0, 0); 
+        direction: ltr;
+    } 
+    
+    .submit_order{
+        box-sizing: border-box;
+        width: 217px;
+        height: 48px;
+        background: no-repeat url(../img/fon_button_order.png);
+        border-radius: 7px;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+        box-shadow: 6px -6px 0px 0px rgba(0, 0, 0, 0.2);
+        outline: none;
+        border: none;
+    }
+    
+    .submit_order:active{
+        box-shadow: none;
+        -moz-transform: translate(1px, 1px); /* Для Firefox */
+         -ms-transform: translate(1px, 1px); /* Для IE */
+          -webkit-transform: translate(1px, 1px); /* Для Safari, Chrome, iOS */
+           -o-transform: translate(1px, 1px);
+            transform: translate(1px, 1px);
+    }
+    
+    #submit_train{
+        grid-column: 3/4;
+        cursor: pointer;
+    }
+
+    #submit_aero{
+        cursor: pointer;
+    }
+
+
+    .wr_result_form{
+        /* height:120px;*/
+        max-width:500px;
+        width:100%; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -250px;
+        margin-top: -60px;
+        border-radius: 12px;
+        box-shadow: 6px -6px 0px 0px rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+
+    #result_form{
+        box-sizing: border-box;
+        height:100%;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 20px;
+        background: linear-gradient(to bottom, #F08211, #ECED10);
+        border-width: 4px;
+        border-style: ridge;
+        border-color: #F08212;
+        border-radius: 12px;
+        font-size: 19px;
+        color: #ffffff; 
+        padding-left: 5px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    #result_form p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    #result_form_close{
+        box-sizing: border-box;
+        height: 35px;
+        width: 110px;
+        background: linear-gradient(to bottom, rgb(240, 130, 17), rgb(236, 237, 16));
+        text-align: center;
+        border: 3px solid #F08212;
+        border-radius: 10px;
+        box-shadow: 2px -2px 0px 0px rgba(0, 0, 0, 0.2);
+        padding-top: 3px;
+        -webkit-transition: transform 0.3s linear, background 0.5s linear;
+         -moz-transition: transform 0.3s linear, background 0.5s linear;
+          -o-transition: transform 0.3s linear, background 0.5s linear;
+           transition: transform 0.3s linear, background 0.5s linear;
+        
+    }
+
+    #result_form_close:hover{
+        cursor: pointer;
+        -moz-transform: scale(1.05); /* Для Firefox */
+         -ms-transform: scale(1.05); /* Для IE */
+          -webkit-transform: scale(1.05); /* Для Safari, Chrome, iOS */
+           -o-transform: scale(1.05);
+            transform: scale(1.05);
+            background: rgb(237, 190, 16);
+    }
+    /*----- КОНТАКТЫ -----*/
+
+    .contacts{
+        box-sizing: border-box;
+        max-width: 990px;
+        width: 100%;
+        /* height: 190px; */
+        background: no-repeat url(../img/fon_logo_bottom.png);
+        background-position: center top;
+    }
+
+
+    .wr_block_contacts{
+        padding-top: 30px;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .wr_cont > img{
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        
+    }
+
+    .wr_cont{
+        display: flex;
+        align-items: center;
+    }
+
+    .wr_cont p{
+        margin-left: 10px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        width: 200px;        
+        text-shadow: 1px 1px #6b6a6a,1px -1px #6b6a6a,-1px -1px #6b6a6a,-1px 1px #6b6a6a;
+        cursor: default;
+        -webkit-transition: all 0.4s ease-in;
+         -moz-transition: all 0.4s ease-in;
+          -o-transition: all 0.4s ease-in;
+           transition: all 0.4s ease-in;
+        /* overflow: hidden; */
+        /* transition: width 0.5s ease; */
+    }
+
+    .wr_cont p a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .wr_cont p:hover{
+        margin-left: 50px;
+        -moz-transform: scale(1.25, 1.25); /* Для Firefox */
+         -ms-transform: scale(1.25, 1.25); /* Для IE */
+          -webkit-transform: scale(1.25, 1.25); /* Для Safari, Chrome, iOS */
+           -o-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+    }
+
+    /* .wr_cont_tel img:hover + p{
+        width:122px;
+        outline: 0px solid red;
+    }
+
+    .wr_cont_vk img:hover + p{
+        width:80px;
+        outline: 0px solid red;
+    }
+
+    .wr_cont_email img:hover + p{
+        width:175px;
+        
+    } */
+
+    .wr_disks_bottom{
+        max-width: 990px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+    }
+
+    .wr_disks_bottom span{
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+                    /*////////// =======++++======////////*/
+                /*////////// ============  ============////////*/
+      /*/////////////// ============ МЕДИА ЗАПРОСЫ ============/////////////*/
+                /*////////// ============  ============////////*/
+                    /*////////// =======++++======////////*/
+
+
+    @media only screen and (max-width : 768px){
+
+        nav{
+            top: 12px;
+        }
+
+        .dfg, img[src="img/under-line-header.png"]{
+            width: 768px;
+        }
+
+        
+
+        .wr_disk_calc{
+            width: 66%;
+        }
+
+        
+
+
+    }
+
+	@media only screen and (max-width : 414px){
+
+        .logo_top{
+
+            outline:0px solid blue;
+            position: absolute;
+            top: 1px;
+            left: 80%;
+            z-index: 3;
+        }
+
+        img[src="img/Logo-top.png"]{
+            width: 66px;
+            height: auto;
+        }
+
+        nav{                                                        /* Навигация */
+            padding-top: 3px;
+            padding-bottom: 3px;
+            position: absolute;
+            top: 6px;
+            left: 0;
+            outline:0px solid chartreuse;
+        }
+        
+        nav > ul{
+            margin-left: 5%;
+        }
+        
+        nav > ul li{                    /* Стили кнопок меню */    
+            margin-left: 2%;
+        }
+        
+        nav > ul li a{
+            font-size: 12px;
+        }
+        
+        .disc_for_nav{                       /* Круглые элементы в меню */
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background-color: #fff;
+            align-self: center;
+        }
+
+        .header_slider{
+            height: 142px;
+        }
+
+        .dfg, img[src="img/under-line-header.png"]{
+            max-width: 414px;
+            width: 100%;
+            height: auto;
+        }
+
+        img[src="img/under-line-header.png"]{
+            top:110%;
+        }
+
+        .slogan{
+            width: 180px;
+            height: auto;
+            width: 280px; 
+            top:100px;
+            left: 15%;
+            
+        }
+
+        .orange_block{   
+            height: auto;
+            margin-top: -50px;
+            padding-top: 22%;
+            padding-bottom: 8.9%;
+
+        }
+
+        .header_orange_block{
+            text-shadow: 4px 4px 4px black;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+
+        .header_orange_block{
+            padding-top: 10px;
+        }
+
+        .text_orange_block{
+            
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+        }
+
+        .text_orange_block > :nth-child(1){
+            padding-left: 1%;
+            padding-bottom: 5px;
+        }
+        
+        .text_orange_block > :nth-child(2){
+            padding-left: 34%;
+            padding-bottom: 5px;
+        }
+        
+        .text_orange_block > :nth-child(3){
+            padding-left: 11%;
+            padding-bottom: 5px;
+        }
+        
+        .text_orange_block > :nth-child(4){
+            padding-left: 49%;
+            padding-bottom: 5px;
+        }
+
+        .wr_content{
+            margin-top: -24px;
+        }
+
+        .button_calc_price{
+            background: no-repeat url(../img/fon_for_text_calc_price_mob_ver.png);
+            margin-left: 50px;
+            line-height: 1.5em;
+            top: -12px;
+        }
+
+        .wr_disk_calc{
+            display: none;
+        }
+
+        .text_calc{
+            padding-top: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .calc_prise{
+            padding-top: 15px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 1fr);
+            justify-items: center;
+            align-items: center;
+            grid-row-gap: 10px;
+            outline: 0px solid #e40909;
+        }
+        
+        #result_calc{
+            grid-column: 1/1;
+            justify-self: center;
+            margin-right: 0;
+        }
+
+        .wr_header_form_order{
+            display: flex;
+            flex-direction: column;
+            justify-content: initial;
+            margin-bottom: 12px;
+        }
+
+        .wr_disks_order{
+            padding-top: 0;
+            padding-bottom: 15px;
+            margin-left: 0;
+            outline: 0px solid #e40909;
+        }
+
+        .wr_disks_order span:nth-last-child(-n+4){
+            display: none;
+        }
+
+        .wr_choose{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        #choose_aero{
+            margin-right: 0;
+            
+        }
+
+        #choose_train{
+            margin-right: 0;  
+            margin-bottom: 12px;          
+        }
+
+        .style_press{
+            margin-top: 0px;
+            margin-left: 15px;
+        }
+
+        .text_order{
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .necessarily_for_fill{
+            color: #fff;
+            font-size: 13px;
+            padding-left: 24%;
+            padding-bottom: 5px;
+        }
+
+        #train{
+            height: auto;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(10,1fr);
+            grid-row-gap: 10px;
+            justify-items: center;
+            outline: 0px solid #e40909;
+        }
+
+        #submit_train{
+            grid-column: 1/1;
+        }
+    
+        #aero{
+            height: auto;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(9,1fr);
+            grid-row-gap: 10px;
+            justify-items: center;
+            outline: 0px solid #e40909;
+        }
+
+        .form_order_aero{ /* !!!!!!!!!! Это потом удалить и скрывать через js !!!!!!!!!!!!! */
+            height: auto;
+        }
+
+        .wr_result_form{
+            max-width:300px;
+            margin-left: -150px;
+            margin-top: -50%;
+        }
+
+        .wr_block_contacts{
+            padding-top: 70px;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .cont_email{
+            width: 100%;
+            outline: 0px solid #e40909;
+        }
+
+        .wr_disks_bottom span:nth-last-child(-n+16){
+            display: none;
+        }
+
+	}
+
+	@media only screen and (max-width : 390px){
+
+        .logo_top{
+
+            outline:0px solid blue;
+            position: absolute;
+            top: 1px;
+            left: 80%;
+            z-index: 3;
+        }
+
+        img[src="img/Logo-top.png"]{
+            width: 66px;
+            height: auto;
+        }
+
+        nav{                                                        /* Навигация */
+            padding-top: 3px;
+            padding-bottom: 3px;
+            position: absolute;
+            top: 6px;
+            left: 0;
+            outline:0px solid chartreuse;
+        }
+        
+        nav > ul{
+            margin-left: 5%;
+        }
+        
+        nav > ul li{                    /* Стили кнопок меню */    
+            margin-left: 2%;
+        }
+        
+        nav > ul li a{
+            font-size: 12px;
+        }
+        
+        .disc_for_nav{                       /* Круглые элементы в меню */
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background-color: #fff;
+            align-self: center;
+        }
+
+        .header_slider{
+            height: 142px;
+        }
+
+        .dfg, img[src="img/under-line-header.png"]{
+            max-width: 390px;
+            width: 100%;
+            height: auto;
+        }
+
+        img[src="img/under-line-header.png"]{
+            top:105%;
+        }
+
+        .slogan{
+            width: 180px;
+            height: auto;
+            width: 280px; 
+            top:100px;
+            left: 15%;
+            
+        }
+
+        .orange_block{   
+            height: auto;
+            margin-top: -61px;
+            padding-top: 25%;
+            padding-bottom: 8.1%;
+
+        }
+        
+        .header_orange_block{
+            padding-top: 2px;
+            text-shadow: 4px 4px 4px black;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+
+        .text_orange_block{            
+            padding-top: 8px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+            
+        }
+
+        .text_orange_block > :nth-child(1){
+            padding-left: 1%;
+            padding-bottom: 4px;
+        }
+        
+        .text_orange_block > :nth-child(2){
+            padding-left: 24%;
+            padding-bottom: 4px;
+        }
+        
+        .text_orange_block > :nth-child(3){
+            padding-left: 11%;
+            padding-bottom: 4px;
+        }
+        
+        .text_orange_block > :nth-child(4){
+            padding-left: 49%;
+            padding-bottom: 4px;
+        }
+
+        .wr_content{
+            margin-top: -18px;
+        }
+
+        .wr_disk_calc{
+            display: none;
+        }
+
+        .text_calc{
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .calc_prise{
+            padding-top: 15px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 1fr);
+            justify-items: center;
+            align-items: center;
+            grid-row-gap: 10px;
+            outline: 0px solid #e40909;
+        }
+        
+        #result_calc{
+            grid-column: 1/1;
+            justify-self: center;
+            margin-right: 0;
+        }
+
+        .wr_header_form_order{
+            display: flex;
+            flex-direction: column;
+            justify-content: initial;
+            margin-bottom: 12px;
+        }
+
+        .wr_disks_order{
+            padding-top: 0;
+            padding-bottom: 15px;
+            margin-left: 0;
+            outline: 0px solid #e40909;
+        }
+
+        .wr_disks_order span:nth-last-child(-n+4){
+            display: none;
+        }
+
+        .wr_choose{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        #choose_aero{
+            margin-right: 0;
+            
+        }
+
+        #choose_train{
+            margin-right: 0;  
+            margin-bottom: 12px;          
+        }
+
+        .style_press{
+            margin-top: 0px;
+            margin-left: 15px;
+        }
+
+        .text_order{
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .necessarily_for_fill{
+            color: #fff;
+            font-size: 13px;
+            padding-left: 25%;
+            padding-bottom: 5px;
+        }
+
+        #train{
+            height: auto;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(10,1fr);
+            grid-row-gap: 10px;
+            justify-items: center;
+            outline: 0px solid #e40909;
+        }
+
+        #submit_train{
+            grid-column: 1/1;
+        }
+    
+        #aero{
+            height: auto;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(9,1fr);
+            grid-row-gap: 10px;
+            justify-items: center;
+            outline: 0px solid #e40909;
+        }
+
+        .form_order_aero{ /* !!!!!!!!!! Это потом удалить и скрывать через js !!!!!!!!!!!!! */
+            height: auto;
+        }
+
+        .wr_result_form{
+            max-width:300px;
+            margin-left: -150px;
+            margin-top: -50%;
+        }
+
+        .wr_block_contacts{
+            padding-top: 70px;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .cont_email{
+            width: 100%;
+            outline: 0px solid #e40909;
+        }
+
+        .wr_disks_bottom span:nth-last-child(-n+16){
+            display: none;
+        }
+
+	}
+
+    
+    @media only screen and (max-width : 375px){
+
+        .logo_top{
+
+            outline:0px solid blue;
+            position: absolute;
+            top: 1px;
+            left: 80%;
+            z-index: 3;
+        }
+
+        img[src="img/Logo-top.png"]{
+            width: 66px;
+            height: auto;
+        }
+
+        nav{                                                        /* Навигация */
+            padding-top: 3px;
+            padding-bottom: 3px;
+            position: absolute;
+            top: 6px;
+            left: 0;
+            outline:0px solid chartreuse;
+        }
+        
+        nav > ul{
+            margin-left: 5%;
+        }
+        
+        nav > ul li{                    /* Стили кнопок меню */    
+            margin-left: 2%;
+        }
+        
+        nav > ul li a{
+            font-size: 12px;
+        }
+        
+        .disc_for_nav{                       /* Круглые элементы в меню */
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background-color: #fff;
+            align-self: center;
+        }
+
+        .header_slider{
+            height: 142px;
+        }
+
+        .dfg, img[src="img/under-line-header.png"]{
+            max-width: 375px;
+            width: 100%;
+            height: auto;
+        }
+
+        img[src="img/under-line-header.png"]{
+            top:100%;
+        }
+
+        .slogan{
+            width: 180px;
+            height: auto;
+            width: 280px; 
+            top:100px;
+            left: 15%;
+            
+        }
+        
+        .orange_block{   
+            height: auto;
+            margin-top: -61px;
+            padding-top: 24%;
+            padding-bottom: 9.5%;
+
+        }
+
+        .header_orange_block{
+            padding-top: 1px;
+            text-shadow: 4px 4px 4px black;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+
+        .text_orange_block{   
+            padding-top: 7px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 11px;
+        }
+
+        .text_orange_block > :nth-child(1){
+            padding-left: 1%;
+            padding-bottom: 3px;
+        }
+        
+        .text_orange_block > :nth-child(2){
+            padding-left: 24%;
+            padding-bottom: 3px;
+        }
+        
+        .text_orange_block > :nth-child(3){
+            padding-left: 11%;
+            padding-bottom: 3px;
+        }
+        
+        .text_orange_block > :nth-child(4){
+            padding-left: 49%;
+            padding-bottom: 3px;
+        }
+
+        .button_calc_price{
+            top: -7px;
+        }
+
+        .wr_disk_calc{
+            display: none;
+        }
+
+        .text_calc{
+            padding-top: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .calc_prise{
+            padding-top: 15px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 1fr);
+            justify-items: center;
+            align-items: center;
+            grid-row-gap: 10px;
+            outline: 0px solid #e40909;
+        }
+        
+        #result_calc{
+            grid-column: 1/1;
+            justify-self: center;
+            margin-right: 0;
+        }
+
+        .wr_header_form_order{
+            display: flex;
+            flex-direction: column;
+            justify-content: initial;
+            margin-bottom: 12px;
+        }
+
+        .wr_disks_order{
+            padding-top: 0;
+            padding-bottom: 15px;
+            margin-left: 0;
+            outline: 0px solid #e40909;
+        }
+
+        .wr_disks_order span:nth-last-child(-n+4){
+            display: none;
+        }
+
+        .wr_choose{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        #choose_aero{
+            margin-right: 0;
+            
+        }
+
+        #choose_train{
+            margin-right: 0;  
+            margin-bottom: 12px;          
+        }
+
+        .style_press{
+            margin-top: 0px;
+            margin-left: 15px;
+        }
+
+        .text_order{
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        #train{
+            height: auto;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(10,1fr);
+            grid-row-gap: 10px;
+            justify-items: center;
+            outline: 0px solid #e40909;
+        }
+
+        #submit_train{
+            grid-column: 1/1;
+        }
+    
+        #aero{
+            height: auto;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(9,1fr);
+            grid-row-gap: 10px;
+            justify-items: center;
+            outline: 0px solid #e40909;
+        }
+
+        .form_order_aero{ /* !!!!!!!!!! Это потом удалить и скрывать через js !!!!!!!!!!!!! */
+            height: auto;
+        }
+
+        .wr_result_form{
+            max-width:300px;
+            margin-left: -150px;
+            margin-top: -50%;
+        }
+
+        .wr_block_contacts{
+            padding-top: 70px;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .cont_email{
+            width: 100%;
+            outline: 0px solid #e40909;
+        }
+
+        .wr_disks_bottom span:nth-last-child(-n+16){
+            display: none;
+        }
+
+        
+    
+
+    }
+
+    @media only screen and (max-width : 360px){
+        img[src="img/under-line-header.png"]{
+            top:97%;
+        }
+    }
+    
+    /* @media only screen and (max-width : 320px){
+
+        
+
+
+    } */

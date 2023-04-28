@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="yandex-verification" content="28330590dfe69ffd" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+  	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(86420507, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/86420507" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <title>Главная</title>
+</head>
+<body>
+    
+    <div class="wraper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#calc_price_link">Тарифы</a></li>
+                    <li class="disc_for_nav"></li>
+                    <li><a href="#wr_form_order">Форма заказа</a></li>
+                    <li class="disc_for_nav"></li>
+                    <li><a href="#wr_block_contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="logo_top">
+                 <img src="img/Logo-top.png" alt="top-logo">
+            </div>                             
+            <div class="header_slider">
+                <img class="dfg" src="img/under-fon.png" alt="">
+                <img class="dfg" id="fon-header-3" src="img/fon-header-3.png">
+                <img class="dfg" id="fon-header-2" src="img/fon-header-2.png">
+                <img class="dfg" id="fon-header-1" src="img/fon-header-1.png">
+                <img class="slogan" src="img/slogan.png" alt="">
+                <img src="img/under-line-header.png">
+            </div>
+            <div class="orange_block">
+                <h2 class="header_orange_block">Приветствуем тебя путешественник!!! </h2>
+                    <ol class="text_orange_block">
+                        <li>Мы с комфортом довезем Вас в любую точку Крыма.</li>
+                        <li>Встретим и БЕСПЛАТНО дождемся в аэропорту или на ж.д. вокзале.</li>
+                        <li>Опытные и вежливые водители.</li>
+                        <li>Поможем с багажем.</li>
+                    </ol>
+            </div>
+
+            
+
+        </header>
+        <!-- ---------- КАЛЬКУЛЯТОР ---------- -->
+        <section class="wr_content">
+            <div class="wr_calc_prise">
+                <div class="button_calc_price" id="calc_price_link">Расчет тарифа</div>
+                <div class="wr_disk_calc">
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    <div class="disk_calc"></div>
+                    
+                </div>
+                <div class="text_calc">Узнать стоимость поездки очень легко. Просто введите данные и нажми кнопку "Расчитать", калькулятор мгновенно покажет стоимость поездки.</div>
+                <div class="calc_prise" id="calc_price">
+                    <select name="car" id="car" class="select_calc">
+                        <option value="type_car" >Выберите тип автомобиля</option>
+                        <option value="p_car">Легковой</option>
+                        <option value="minivan" >Минивен</option>
+                    </select>
+                    <select name="from" id="from" class="select_calc">
+                        <option value="place_departure" >Место отправления</option>
+                        <option value="aero">Аэропорт</option>
+                        <option value="trainstation">Ж.Д.Вокзал</option>
+                    </select>
+                    <select name="to" id="to" class="select_calc">
+                        <option value="place_arrive" >Место назначения</option>
+                        <option value="alushta">Алушта</option>
+                        <option value="alupka">Алупка</option>
+                        <option value="balaklava">Балаклава</option>
+                        <option value="beregovoe_ubk">Береговое (ЮБК)</option>
+                        <option value="beregovoe_nik">Береговое (Николаевка)</option>
+                        <option value="beregovoe_feo">Береговое (Феодосия)</option>
+                        <option value="gaspra">Гаспра</option>
+                        <option value="gurzuf">Гурзуф</option> 
+                        <option value="evpatoriya">Евпатория</option>
+                        <option value="zaozernoe">Заозерное</option>
+                        <option value="kaciveli">Кацивели</option>
+                        <option value="kacha">Кача</option>
+                        <option value="kerch">Керчь</option>
+                        <option value="koktebel">Коктебель</option>
+                        <option value="livadiya">Ливадия</option>
+                        <option value="malorechenskoe">Малореченское</option>
+                        <option value="nikolaevka">Николаевка</option>
+                        <option value="novofedorovka">Новофедоровка</option>
+                        <option value="noviysvet">Новый-Свет</option>
+                        <option value="olenevka">Оленевка</option>
+                        <option value="ordzhonikidze">Орджоникидзе</option>
+                        <option value="partenit">Партенит</option>
+                        <option value="peschanoe">Песчаное</option>
+                        <option value="ponizovka">Понизовка</option>
+                        <option value="popovka">Поповка</option>
+                        <option value="ribache">Рыбачье</option>
+                        <option value="saki">Саки</option>
+                        <option value="priboy">Саки(Прибой)</option>
+                        <option value="sanatornoye">Санаторное</option>
+                        <option value="sevastopol">Севастополь</option>
+                        <option value="simeiz">Симеиз</option>
+                        <option value="solnechnogorskoe">Солнечногорское</option>
+                        <option value="sudak">Судак</option>
+                        <option value="feodosiya">Феодосия</option>                               
+                        <option value="foros">Форос</option>
+                        <option value="chernomorskoe">Черноморское</option>
+                        <option value="shtormovoe">Штормовое</option>
+                        <option value="yalta">Ялта</option>                       
+                    </select>
+                    <select name="children_until_1" id="children1" class="select_calc">
+                        <option value="children1">Дети до 1 года</option>
+                        <option value="no">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <select name="children_from3_7" id="children3_7" class="select_calc">
+                        <option value="children3_7">Дети от 1 до 7 лет</option>
+                        <option value="no">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <div id="select_calc_button">Расчитать</div>
+                    <div id="result_calc" class="result_calc">0 руб.</div>
+                </div>
+            </div>
+            <!-- ---------- ФОРМА ЗАКАЗА ---------- -->
+            <div class="wr_form_order" id="wr_form_order">
+                <div class="wr_header_form_order">
+                    <div class="wr_disks_order">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="wr_choose">
+                        <div class="choose" id="choose_aero">Аэропорт</div>
+                        <div class="choose style_press" id="choose_train">Ж.Д.Вокзал</div>
+                    </div>                    
+                </div>
+                <div class="text_order">Отправьте нам все необходимые данные с помощью форм ниже. И мы как можно быстрее свяжемся с Вами, для уточнения деталей и утверждения заказа.</div>
+                <div class="form_order_both form_order_train">
+                    <p class="necessarily_for_fill">** - обязательно для заполнения</p>
+                    <form name="form_train"id="train">
+                        <input type="text" name="name" value="Имя **">
+                      	<input type="text" name="phonenumber" value="Номер телефона **">
+                        <input type="text" name="number_train" value="Номер поезда">
+                        <input type="text" name="number_van" value="Номер вагона">
+                        <input type="text" name="date_arrivals" value="Дата прибытия">
+                        <input type="text" name="time_arrivals" value="Время прибытия">                       
+                      	<select name="amout_piople" id="amout_piople_train">
+                            <option value="amount_pioople">Кол-во человек</option>                           
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        <select name="children_order1" id="children_order1_train">
+                            <option value="Дети до 1 года">Дети до 1 года</option>
+                            <option value="0">0</option>                            
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select> 
+                        <select name="children_order3_7" id="children_order3_7_train">
+                            <option value="Дети от 3 до 7 лет">Дети от 1 до 7 лет</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <button type="submit" name="button" id="submit_train" class="submit_order">Отправить</button>
+                    </form>
+                </div>                
+                <div class="form_order_both form_order_aero">
+                    <p class="necessarily_for_fill">** - обязательно для заполнения</p>
+                    <form name="form_aero" id="aero">
+                        <input type="text" name="name" value="Имя **">
+                      	<input type="text" name="phonenumber" value="Номер телефона **">
+                        <input type="text" name="date_arrivals" value="Дата прилета">
+                        <input type="text" name="time_arrivals" value="Время прилета">                     	
+                        <input type="text" name="number_flight" value="Номер рейса">                        
+                        <select name="amout_piople" id="amout_piople_aero">
+                            <option value="amount_pioople">Кол-во человек</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        <select name="children_order1" id="children_order1_aero">
+                            <option value="Дети до 1 года">Дети до 1 года</option> 
+                            <option value="0">0</option>                           
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select> 
+                        <select name="children_order3_7" id="children_order3_7_aero">
+                            <option value="Дети от 3 до 7 лет">Дети от 1 до 7 лет</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <button type="submit" name="button" id="submit_aero" class="submit_order">Отправить</button>                       
+                    </form>
+                </div>
+                <div class="wr_result_form">
+                    <div id="result_form">
+                        <p></p>
+                      <div id="result_form_close">Закрыть</div>
+                  </div> 
+                </div>             
+            </div>
+            <div class="contacts">
+                <div class="wr_block_contacts" id="wr_block_contacts">
+                    <div class="wr_cont wr_cont_tel"><img src="./img/button_telefon.png"> <p>+79789971159</p></div>
+                    <div class="wr_cont wr_cont_vk"><img src="./img/button_vk.png"><p><a href="https://vk.com/transfer_taxi_crimea">vkontakte</a></p></div>
+                    <div class="wr_cont wr_cont_email"><img src="./img/button_email.png"><p class="cont_email">info@trans-crimea.ru</p></div>
+                </div>
+                <div class="wr_disks_bottom">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
